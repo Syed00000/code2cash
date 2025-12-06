@@ -30,12 +30,15 @@ const testimonials = [
 ];
 
 function ShuffleCards() {
-  const [positions, setPositions] = useState(["front", "middle", "back"]);
+  const [positions, setPositions] = useState<("front" | "middle" | "back")[]>(["front", "middle", "back"]);
 
   const handleShuffle = () => {
     const newPositions = [...positions];
-    newPositions.unshift(newPositions.pop());
-    setPositions(newPositions);
+    const last = newPositions.pop();
+    if (last) {
+      newPositions.unshift(last);
+      setPositions(newPositions);
+    }
   };
 
   return (
@@ -51,7 +54,7 @@ function ShuffleCards() {
           Don't just take our word for it. Hear what industry leaders have to say about working with us.
         </p>
       </div>
-      
+
       <div className="relative -ml-[100px] h-[450px] w-[350px] md:-ml-[175px]">
         {testimonials.slice(0, 3).map((testimonial, index) => (
           <TestimonialCard
@@ -62,7 +65,7 @@ function ShuffleCards() {
           />
         ))}
       </div>
-      
+
       <div className="text-center mt-12">
         <p className="text-gray-400 text-sm">
           Swipe or drag the card to see more testimonials
