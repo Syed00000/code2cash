@@ -10,7 +10,7 @@ const testimonials = [
   {
     id: 2,
     testimonial: "The team at Code2Cash delivered beyond our expectations. They understand both technology and business needs perfectly.",
-    author: "Michael Rodriguez - CEO @ StartupHub"
+    author: "Syed Asghar Ali - Senior Software Engineer @ HCL Tech"
   },
   {
     id: 3,

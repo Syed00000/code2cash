@@ -13,12 +13,13 @@ import { DisplayCardsDemo } from "@/components/ui/display-cards-demo";
 import DisplayCardsSection from "@/components/ui/orbital-timeline-section";
 import TechStackMarqueeNew from "@/components/ui/tech-stack-marquee-new";
 import { ShuffleCards } from "@/components/ui/testimonial-demo-final";
+import { SplineCallToAction } from "@/components/ui/3d-call-to-action";
 
 export default function Home() {
   return (
     <>
       {/* Logo - Scrollable with page - ALIGNED WITH HEADER & LARGE (Negative top for tight fit) */}
-      <div className="absolute -top-9 left-2 md:-top-10 md:left-6 z-50">
+      <div className="absolute -top-6 left-2 md:-top-10 md:left-6 z-50">
         <Link href="/" className="group flex items-start gap-3">
           <div className="h-48 w-auto md:h-52 md:w-auto flex items-center justify-start transition-transform group-hover:scale-105">
             <img
@@ -80,6 +81,11 @@ export default function Home() {
         {/* Tech Stack Marquee Section */}
         <section id="contact" className="bg-[#030303] overflow-x-hidden w-full">
           <TechStackMarqueeNew />
+        </section>
+
+        {/* 3D Call To Action Section */}
+        <section className="bg-[#030303] overflow-x-hidden w-full border-t border-white/5">
+          <SplineCallToAction />
         </section>
       </main>
 
