@@ -15,7 +15,6 @@ import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 const programs = [
     "Frontend Development Internship",
@@ -26,10 +25,6 @@ const programs = [
 ];
 
 export default function InternshipApplicationForm() {
-    const searchParams = useSearchParams();
-    // Get pre-selected program if available, but for now we just default to empty or generic
-    // If we had IDs mapped to names we could pre-select. 
-
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
