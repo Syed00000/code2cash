@@ -38,9 +38,9 @@ const footerLinks: FooterSection[] = [
     {
         label: 'Connect',
         links: [
-            { title: 'Instagram', href: '#', icon: InstagramIcon },
-            { title: 'LinkedIn', href: '#', icon: LinkedinIcon },
-            { title: 'Email', href: 'mailto:hello@code2cash.com', icon: Mail },
+            { title: 'Instagram', href: 'https://www.instagram.com/code2cash_co/', icon: InstagramIcon },
+            { title: 'LinkedIn', href: 'https://www.linkedin.com/company/code2cash', icon: LinkedinIcon },
+            { title: 'Email', href: 'mailto:code2cash1@gmail.com', icon: Mail },
         ],
     },
 ];
