@@ -58,7 +58,7 @@ export function Footer() {
                     {/* Brand Section */}
                     <AnimatedContainer className="flex flex-col">
                         <Link href="/" className="inline-block">
-                            <div className="h-44 w-auto flex items-center justify-start -ml-10 -mt-12">
+                            <div className="h-44 w-auto flex items-center justify-start -ml-5 -mt-12">
                                 <img
                                     src="/logo-final.png"
                                     alt="Code2Cash"

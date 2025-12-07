@@ -297,7 +297,7 @@ export default function TechStackMarqueeNew() {
           <div className="flex flex-row gap-4 md:gap-8 md:[transform:rotateX(15deg)_rotateY(-5deg)_rotateZ(5deg)]">
             {/* Column 1 - Top to Bottom */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover repeat={6} className="[--duration:45s]">
+              <Marquee vertical pauseOnHover repeat={6} className="[--duration:20s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-1`} {...tech} />
                 ))}
@@ -306,7 +306,7 @@ export default function TechStackMarqueeNew() {
 
             {/* Column 2 - Bottom to Top */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:50s]">
+              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:25s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-2`} {...tech} />
                 ))}
@@ -315,7 +315,7 @@ export default function TechStackMarqueeNew() {
 
             {/* Column 3 - Top to Bottom */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover repeat={6} className="[--duration:55s]">
+              <Marquee vertical pauseOnHover repeat={6} className="[--duration:30s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-3`} {...tech} />
                 ))}
@@ -324,7 +324,7 @@ export default function TechStackMarqueeNew() {
 
             {/* Column 4 - Bottom to Top */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:60s]">
+              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:35s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-4`} {...tech} />
                 ))}
@@ -333,7 +333,7 @@ export default function TechStackMarqueeNew() {
 
             {/* Column 5 - Top to Bottom */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover repeat={6} className="[--duration:65s]">
+              <Marquee vertical pauseOnHover repeat={6} className="[--duration:40s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-5`} {...tech} />
                 ))}
@@ -342,7 +342,7 @@ export default function TechStackMarqueeNew() {
 
             {/* Column 6 - Bottom to Top */}
             <div className="flex flex-col">
-              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:70s]">
+              <Marquee vertical pauseOnHover reverse repeat={6} className="[--duration:45s]">
                 {shuffledTechStack.map((tech) => (
                   <TechCard key={`${tech.name}-6`} {...tech} />
                 ))}
