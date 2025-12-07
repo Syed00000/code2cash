@@ -14,7 +14,7 @@ export default function CareersPage() {
         <main className="min-h-screen bg-[#030303] text-white selection:bg-[#31a39c] selection:text-white flex flex-col">
             <Code2CashNavbar />
 
-            <div className="flex-grow flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="flex-grow flex flex-col items-center justify-center p-4 pt-32 md:pt-10 relative overflow-hidden">
                 {/* Background Effects */}
                 <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[#31a39c]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#31a39c]/5 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />

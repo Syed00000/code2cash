@@ -18,7 +18,7 @@ export function Code2CashNavbar() {
             {/* Logo - Scrollable with page - ALIGNED WITH HEADER & LARGE (Negative top for tight fit) */}
             <div className="absolute -top-6 left-2 md:-top-10 md:left-6 z-50 pointer-events-none">
                 <Link href="/" className="group flex items-start gap-3 pointer-events-auto">
-                    <div className="h-48 w-auto md:h-52 md:w-auto flex items-center justify-start transition-transform group-hover:scale-105">
+                    <div className="h-28 w-auto md:h-52 md:w-auto flex items-center justify-start transition-transform group-hover:scale-105">
                         <img
                             src="/logo-final.png"
                             alt="Code2Cash"

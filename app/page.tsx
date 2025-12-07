@@ -147,21 +147,17 @@ export default function Home() {
           </LazySection>
         </div>
 
-        {/* Tech Stack - Desktop only */}
-        {!isMobile && (
-          <div id="tech-stack" className="w-full">
-            <LazySection className="bg-[#030303] overflow-x-hidden w-full" rootMargin="1200px">
-              <TechStackMarqueeNew />
-            </LazySection>
-          </div>
-        )}
-
-        {/* 3D CTA - Desktop only */}
-        {!isMobile && (
-          <LazySection className="bg-[#030303] overflow-x-hidden w-full border-t border-white/5" rootMargin="1500px">
-            <section><SplineCallToAction /></section>
+        {/* Tech Stack */}
+        <div id="tech-stack" className="w-full">
+          <LazySection className="bg-[#030303] overflow-x-hidden w-full" rootMargin="1200px">
+            <TechStackMarqueeNew />
           </LazySection>
-        )}
+        </div>
+
+        {/* 3D CTA */}
+        <LazySection className="bg-[#030303] overflow-x-hidden w-full border-t border-white/5" rootMargin="1500px">
+          <section><SplineCallToAction /></section>
+        </LazySection>
 
         {/* Testimonials - Desktop only */}
         {!isMobile && (
@@ -177,12 +173,10 @@ export default function Home() {
           </LazySection>
         </div>
 
-        {/* Lamp - Desktop only */}
-        {!isMobile && (
-          <LazySection className="bg-[#030303] overflow-x-hidden w-full" rootMargin="1200px">
-            <section><LampSection /></section>
-          </LazySection>
-        )}
+        {/* Lamp */}
+        <LazySection className="bg-[#030303] overflow-x-hidden w-full" rootMargin="1200px">
+          <section><LampSection /></section>
+        </LazySection>
       </main>
 
       <Footer />
